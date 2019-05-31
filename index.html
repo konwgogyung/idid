@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+<title>mozzy home - welcome</title>
+<meta charset="utf-8">
+</haed>
+<style>
+body{
+  margin:0;
+}
+a {
+  clolr:black;
+  text-decoration: none;
+}
+h1 {
+  font-size:60px;
+  text-align: center;
+  border-bottom:1px solid gray;
+  margin:0;
+  padding:20px;
+}
+ol{
+  border-right:1px solid gray;
+  width:100px;
+margin:0;
+padding:20px;
+}
+#grid{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#grid ol{
+  padding-left:40px;
+}
+#grid #article{
+  padding-left:40px
+}
+@media(max-width:800px){
+  #grid{
+    display: block;
+  }
+  ol{
+    border-right:none;
+}
+h1 {
+  border-bottom:none;
+}
+}
+  </style>
+  <h1><a href="index.html"><img src="메인.jpg" width="100%"></a></h1>
+  <input type="button" value="첫번째클릭" onclick="
+  document.querySelector('body').style.backgroundColor = 'black';
+  document.querySelector('body').style.color ='white';
+  ">
+
+  <input type="button" value="두번째클릭" onclick="
+  document.querySelector('body').style.backgroundColor = 'white';
+  document.querySelector('body').style.color ='black';
+  ">
+
+  <input type="button" value="black" onclick="
+  if(document.querySelector('body').dataset.mode === 'day'){
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+    document.querySelector('body').dataset.mode = 'night';
+    this.value = 'day';
+  } else {
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    document.querySelector('body').dataset.mode = 'day';
+    this.value = 'night';
+}
+">
+
+
+<input type="button" value="네번째클릭" onclick="
+document.querySelector('body').style.backgroundColor = 'red';
+document.querySelector('body').style.color ='pink';
+">
+
+<input type="button" value="다섯번째클릭" onclick="
+document.querySelector('body').style.backgroundColor = 'pink';
+document.querySelector('body').style.color ='red';
+">
+
+
+
+  <ol>
+      <li><a href="1.html">모찌사진</a></li>
+      <li><a href="2.html">모찌영상</a></li>
+      <li><a href="3.html">블로그,인스타</a></li>
+  </ol>
+<div id="grid">
+<h2> 소개글 ☞☞ </h2>
+<div id="article">
+<p>
+  안녕하세요 보잘것 없지만 사이트를 찾아주시는 모든 분들에게 설명을 드려보자면
+<h3><strong>지금 알려드리는 고양이는 저희집에서 키우는 <u>스코티쉬폴드 모찌</u> 입니다</strong></h3>
+코딩을 통해서 홈페이지 만들기를 공부를 하고 있다가 어떤 주제로 첫 도전을 해야할지에
+대해서 잘 몰랐기 때문에 가장 귀엽고 접근 하기 쉬운 저희 모찌로 만들어 보았어요
+<br><br>
+저희집 고양이 모찌를 많이 보시고 가시면 좋을 거 같아요 유튜브는
+현재 재가 하고 있는 모찌와의 추억을 남인 것이라 함께 올려 봅니다
+사진들과 영상들을 많이 올려보도록 할테니 다들 즐겁게 봐주시길 바랄게요
+이상으로 간단한 소개는 여기서 짧게 마무리 하도록 하겠습니다 ^^
+<br><br>
+폴더별로 정리를 해놀도록 할테니까 모찌에 대해서 궁금하신분들은
+귀여운 모습을 보시고 힐링 하고 가시길 바랄게요 <br>
+</p>
+<br><br><br><br><br>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5cebbf8aa667a0210d599d78/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+<img src="문구2.jpg" width="100%">
+<br><br><br><br>
+  <a href="https://www.youtube.com/channel/UCarlnOeXHVyEi3paSq0pwGg" target="-blank" title="thml5 speicification"><img src="유튜.jpg" width="30%"></a>
+
+<a href="https://blog.naver.com/rnjsdnr0321" target="-blank" title="thml5 speicification">  <img src="블로.jpg" width="30%"></a>
+
+  <a href="https://www.instagram.com/mozzy_gg/" target="-blank" title="thml5 speicification"><img src="잉스.jpg" width="30%"></a>
+  <br><br><br><br><br><br><br><br><br><br>
+
+  <br>
+  <img src="제작.jpg" width="70%">
+  <br>
+</div>
+</div>
+</body>
+</html>
